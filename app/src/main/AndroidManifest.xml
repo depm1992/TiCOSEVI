@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.dcr.ticosevi">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".Actividad01"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Actividad02"
+            android:label="@string/title_activity_actividad02"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Actividad03_AcercaDe"
+            android:label="@string/title_activity_actividad03__acerca_de"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Actividad04_Realizar_Prueba"
+            android:label="@string/title_activity_actividad04__realizar__prueba"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Actividad05_Pasos_de_Licencia"
+            android:label="@string/title_activity_actividad05__pasos_de__licencia"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Actividad06_Estudiar_Manual"
+            android:label="@string/title_activity_actividad06__estudiar__manual"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Actividad07_Mapa"
+            android:label="@string/title_activity_actividad06__mapa"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Actividad09_Resultado"
+            android:label="@string/title_activity_activivdad07__resultado"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Actividad08_Pregunta"
+            android:label="@string/title_activity_actividad08__pregunta"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+    </application>
+
+</manifest>
