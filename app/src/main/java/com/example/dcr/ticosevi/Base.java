@@ -13,7 +13,7 @@ public class Base extends AppCompatActivity {
     private static ArrayList<Pregunta> preguntas; //el array debe ser de obejtos preguta o de lo que se cargue de la base de datos
     private static int buenas;
     private static int malas;
-
+    private static int hola;
 
 
     public void Mensaje(String msg){
