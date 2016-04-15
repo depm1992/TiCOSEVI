@@ -14,7 +14,6 @@ public class Base extends AppCompatActivity {
     private static int buenas;
     private static int malas;
 
-    private static int hola;
 
 
     public void Mensaje(String msg){
