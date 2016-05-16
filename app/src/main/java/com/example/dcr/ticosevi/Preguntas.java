@@ -2,9 +2,6 @@ package com.example.dcr.ticosevi;
 
 import java.util.ArrayList;
 
-/**
- * Created by dCR on 15/05/2016.
- */
 public class Preguntas {
 
     private static Preguntas instance = null;

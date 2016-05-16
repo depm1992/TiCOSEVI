@@ -1,8 +1,5 @@
 package com.example.dcr.ticosevi;
 
-/**
- * Created by dCR on 14/04/2016.
- */
 public class Pregunta {
 
     private int Numero;// de pregunta (Unico)->int

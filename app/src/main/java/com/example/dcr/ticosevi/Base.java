@@ -5,9 +5,6 @@ import android.widget.Toast;
 
 import java.util.ArrayList;
 
-/**
- * Created by dCR on 14/04/2016.
- */
 public class Base extends AppCompatActivity {
 
     public void Mensaje(String msg){
