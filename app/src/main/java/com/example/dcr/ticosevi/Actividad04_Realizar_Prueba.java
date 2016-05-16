@@ -23,15 +23,16 @@ public class Actividad04_Realizar_Prueba extends Base {
                 RadioButton rb1 = (RadioButton) findViewById(R.id.rbFacil);
                 RadioButton rb2 = (RadioButton) findViewById(R.id.rbMedio);
                 RadioButton rb3 = (RadioButton) findViewById(R.id.rbDificil);
+                Preguntas vg = Preguntas.getInstance();
                 if (rb1.isChecked()) {
-                    setNivel(1);
+                    vg.setNivel(1);
                 }
                 if (rb2.isChecked()) {
-                    setNivel(2);
+                    vg.setNivel(2);
                 }
 
                 if (rb3.isChecked()) {
-                    setNivel(3);
+                    vg.setNivel(3);
                 }
                 Intent intento = new Intent(getApplicationContext(), Actividad08_Pregunta.class);
                 startActivity(intento);
