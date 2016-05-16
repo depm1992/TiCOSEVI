@@ -24,7 +24,8 @@ public class Preguntas {
 
     public void cargarPrueba(){
         Pregunta pre1 = new Pregunta();
-        Pregunta pre2 = new Pregunta(0, "Pregunta 2", "p", "Respuesta pregunta 2.1", "Respuesta pregunta 2.2", "Respuesta pregunta 2.3", "Respuesta pregunta 2.1");
+        Pregunta pre2 = new Pregunta(0, "Pregunta 2", "p", "Respuesta pregunta 2.1",
+                "Respuesta pregunta 2.2", "Respuesta pregunta 2.3", "Respuesta pregunta 2.1");
         this.preguntas.add(pre1);
         this.preguntas.add(pre2);
 
