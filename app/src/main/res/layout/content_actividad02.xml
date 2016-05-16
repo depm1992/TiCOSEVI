@@ -16,7 +16,7 @@
     <Button
         android:layout_width="220dp"
         android:layout_height="wrap_content"
-        android:text="pasos para sacar la licencia"
+        android:text="pasos para obtener la licencia"
         android:id="@+id/button4"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
