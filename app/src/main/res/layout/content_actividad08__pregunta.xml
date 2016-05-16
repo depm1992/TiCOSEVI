@@ -12,4 +12,12 @@
     tools:context="com.example.dcr.ticosevi.Actividad08_Pregunta"
     tools:showIn="@layout/activity_actividad08__pregunta">
 
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Regresar"
+        android:id="@+id/btnRregresar"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="111dp" />
 </RelativeLayout>
