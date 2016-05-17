@@ -49,6 +49,10 @@
         <activity
             android:name=".Actividad08_Pregunta"
             android:label="@string/title_activity_actividad08__pregunta"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Actividad05__pasos_de__licencia"
+            android:label="@string/title_activity_actividad05__pasos_de__licencia"
             android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
