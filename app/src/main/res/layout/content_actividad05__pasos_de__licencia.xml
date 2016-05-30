@@ -18,6 +18,54 @@
         android:text="Licencia por Primera Vez"
         android:id="@+id/textView"
         android:textColor="#96bce7"
+        android:layout_row="0"
+        android:layout_column="1"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:singleLine="true"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Descripción"
+        android:id="@+id/textView3"
+        android:layout_row="1"
+        android:layout_column="1"
+        android:textSize="@dimen/abc_action_bar_icon_vertical_padding_material"
+        android:textColor="#a4a2a2"
+        android:textStyle="bold"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="32dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Una vez cumplido con los requisitos de prueba práctica de manejo y los cursos teóricos requeridos la persona puede obtener su licencia por primera vez por 3 años."
+        android:id="@+id/textView4"
+        android:layout_row="2"
+        android:layout_column="1"
+        android:gravity="fill_vertical"
+        android:layout_below="@+id/textView3"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Requisitos"
+        android:id="@+id/textView5"
+        android:layout_row="1"
+        android:layout_column="1"
+        android:textSize="@dimen/abc_action_bar_icon_vertical_padding_material"
+        android:textColor="#a4a2a2"
+        android:textStyle="bold"
+        android:layout_below="@+id/textView4"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="34dp" />
+
 </RelativeLayout>
