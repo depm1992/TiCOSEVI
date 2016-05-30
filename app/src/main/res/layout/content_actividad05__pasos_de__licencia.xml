@@ -12,4 +12,12 @@
     tools:context="com.example.dcr.ticosevi.Actividad05_Pasos_de_Licencia"
     tools:showIn="@layout/activity_actividad05__pasos_de__licencia">
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Licencia por Primera Vez"
+        android:id="@+id/textView"
+        android:textColor="#96bce7"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
 </RelativeLayout>
