@@ -15,7 +15,6 @@ public class Actividad05_Pasos_de_Licencia extends AppCompatActivity {
         setContentView(R.layout.activity_actividad05__pasos_de__licencia);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-
     }
 
 }
