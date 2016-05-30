@@ -1,11 +1,13 @@
 package com.example.dcr.ticosevi;
 
 import android.os.Bundle;
+import android.support.design.widget.FloatingActionButton;
+import android.support.design.widget.Snackbar;
+import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
-import android.webkit.WebView;
-import android.webkit.WebViewClient;
+import android.view.View;
 
-public class Actividad05_Pasos_de_Licencia extends Base {
+public class Actividad05_Pasos_de_Licencia extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -14,26 +16,6 @@ public class Actividad05_Pasos_de_Licencia extends Base {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        /*
-        WebView webView = (WebView) findViewById(R.id.webView);
-        webView.setWebViewClient(new Callback());
-        WebSettings webSettings = webView.getSettings();
-        webSettings.setBuiltInZoomControls(true);
-        webView.loadUrl("https://www.csv.go.cr/requisitos-prueba-teorica");
-        findViewById(R.id.button31).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(Actividad05_Pasos_de_Licencia.this, Actividad02.class));
-            }
-        });*/
-    }
-
-    private class Callback extends WebViewClient {
-        @Override
-        public boolean shouldOverrideUrlLoading(WebView view,
-                                                String url) {
-            return (false);
-        }
     }
 
 }
