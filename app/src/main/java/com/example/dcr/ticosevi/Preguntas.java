@@ -47,7 +47,6 @@ public class Preguntas {
         return preguntas.get(i);
     }
 
-
     public void setPreguntas(ArrayList<Pregunta> preguntas) {
         preguntas = preguntas;
     }
