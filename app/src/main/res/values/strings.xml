@@ -3,12 +3,12 @@
     <string name="action_settings">Settings</string>
     <string name="title_activity_actividad02">Actividad02</string>
     <string name="title_activity_acerca_de">AcercaDE</string>
-    <string name="title_activity_actividad03__acerca_de">Actividad03_AcercaDe</string>
-    <string name="title_activity_actividad04__realizar__prueba">Actividad04_Realizar_Prueba</string>
-    <string name="title_activity_actividad05__pasos_de__licencia">Actividad05_Pasos_de_Licencia
+    <string name="title_activity_actividad03__acerca_de">AcercaDe</string>
+    <string name="title_activity_actividad04__realizar__prueba">Realizar Prueba</string>
+    <string name="title_activity_actividad05__pasos_de__licencia">Pasos para la Licencia
     </string>
-    <string name="title_activity_actividad06__estudiar__manual">Actividad06_Estudiar_Manual</string>
-    <string name="title_activity_actividad06__mapa">Actividad06_Mapa</string>
-    <string name="title_activity_activivdad07__resultado">Activivdad07_Resultado</string>
-    <string name="title_activity_actividad08__pregunta">Actividad08_Pregunta</string>
+    <string name="title_activity_actividad06__estudiar__manual">Estudiar Manual</string>
+    <string name="title_activity_actividad06__mapa">Mapa</string>
+    <string name="title_activity_activivdad07__resultado">Resultado</string>
+    <string name="title_activity_actividad08__pregunta">Preguntas</string>
 </resources>
