@@ -65,6 +65,7 @@ public class Actividad02 extends Base {
                         break;
                 }// fin de casos
             }// fin del onclick
+            //
         });
     }// fin de OnclickDelButton
 
