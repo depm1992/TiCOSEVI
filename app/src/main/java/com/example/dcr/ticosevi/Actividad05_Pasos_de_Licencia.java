@@ -1,5 +1,6 @@
 package com.example.dcr.ticosevi;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -16,6 +17,8 @@ public class Actividad05_Pasos_de_Licencia extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
+        Intent intento = new Intent(getApplicationContext(), Actividad02.class);
+        startActivity(intento);
     }
 
 }

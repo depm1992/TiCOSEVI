@@ -69,4 +69,14 @@
         android:layout_alignParentStart="true"
         android:layout_marginTop="34dp" />
 
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="ok"
+        android:id="@+id/btnok"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="46dp" />
+
 </RelativeLayout>
