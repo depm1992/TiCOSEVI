@@ -77,6 +77,28 @@ public class Preguntas {
                 "Semáforo vehicular, semaforo peatonal y señal luminosa informativa.", "Semáforo vehicular, semaforo peatonal y señal luminosa informativa.");
         Pregunta pre22 = new Pregunta(20, "A que conductor que en categoría novato acumule 6 puntos en su licencia recibe una suspensión de la misma por un período de:", "",
                 "1 año la primera vez.", "2 años la primera vez.", "6 meses la primera vez.", "1 año la primera vez.");
+        Pregunta pre23 = new Pregunta(21, "La imagen que se muestra corresponde a una señal de:", "restaurante",
+                "Identificación.", "Servicio y turismo.", "Recomendación.", "Servicio y turismo.");
+        Pregunta pre24 = new Pregunta(22, "La imagen que se muestra corresponde a una señal de:", "maximo",
+                "Información.", "Reglamentación.", "Prevención.", "Reglamentación.");
+        Pregunta pre25 = new Pregunta(23, "La acera es parte de la vía:", "",
+                "Urbana.", "Rural.", "Rural y urbana.", "Urbana.");
+        Pregunta pre26 = new Pregunta(24, "Educar al ciudadano en el uso correcto de la vía pública y sus automotores  es un objetivo de:", "",
+                "MOPT.", "Seguridad vial.", "COSEVI.", "Seguridad vial.");
+        Pregunta pre27 = new Pregunta(25, "El \"derecho a circular\" está protegido constitucionalmente en:", "",
+                "El artículo 22 de la Constitución política.", "El artículo 1 de la Ley de Tránsito.",
+                "El artículo 22 de la Ley de Tránsito.", "El artículo 22 de la Constitución política.");
+        Pregunta pre28 = new Pregunta(26, "Un buen hábito, para el ejercicio de una conducción económica es:", "",
+                "Deshacerse de todo peso extra del vehículo.", "Mantener una alta presión de llantas.",
+                "Hacer un calentamiento previo del vehículo.", "Deshacerse de todo peso extra del vehículo.");
+        Pregunta pre29 = new Pregunta(27, "El oficial procederá al retiro temporal de un vehículo en el siguiente caso:", "",
+                "Cuando las condiciones mecánicas del vehículo le impidan circular, salvo que el conductor contrate los servicios privados de acarreo.",
+                "Al conductor que incumpla las indicaciones para la circulación en rotondas.","A quien circule con exceso de carga.",
+                "Cuando las condiciones mecánicas del vehículo le impidan circular, salvo que el conductor contrate los servicios privados de acarreo.");
+        Pregunta pre30 = new Pregunta(28, "Las láminas ubicadas en postes o lugares elevados, pertenecen al tipo de dispositivos:", "",
+                "Verticales.",
+                "Horizontales.","Luminosos.",
+                "Verticales.");
         this.preguntas.add(pre1);
         this.preguntas.add(pre2);
         this.preguntas.add(pre3);
@@ -99,6 +121,14 @@ public class Preguntas {
         this.preguntas.add(pre20);
         this.preguntas.add(pre21);
         this.preguntas.add(pre22);
+        this.preguntas.add(pre23);
+        this.preguntas.add(pre24);
+        this.preguntas.add(pre25);
+        this.preguntas.add(pre26);
+        this.preguntas.add(pre27);
+        this.preguntas.add(pre28);
+        this.preguntas.add(pre29);
+        this.preguntas.add(pre30);
 
     }
 
