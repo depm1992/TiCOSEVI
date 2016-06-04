@@ -23,8 +23,8 @@
         android:textStyle="bold"
         android:textAlignment="center"
         android:singleLine="true"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -73,9 +73,10 @@
         android:layout_height="wrap_content"
         android:text="OK"
         android:id="@+id/btnok"
+        android:layout_marginBottom="37dp"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="46dp" />
+        android:background="#4def4f" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -154,7 +155,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="    o Curso básico y de transporte público aprobado. (Las C1 no hacen prueba práctica)."
+        android:text="    o Curso básico y de transporte público aprobado."
         android:id="@+id/textView16"
         android:layout_below="@+id/textView15"
         android:layout_alignParentLeft="true"
@@ -172,10 +173,38 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="    o Dictamen Médico digital vigente."
+        android:text="    o Documento de identificación al día."
         android:id="@+id/textView15"
         android:layout_below="@+id/textView14"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" •Licencia C-2 para bus, buseta y microbús."
+        android:id="@+id/textView17"
+        android:textColor="#464444"
+        android:layout_below="@+id/textView16"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="    o Debe tener 3 años de experiencia en tipo B o C-1."
+        android:id="@+id/textView18"
+        android:layout_below="@+id/textView17"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="    o Curso básico y de transporte público aprobado."
+        android:id="@+id/textView21"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView18" />
 
 </RelativeLayout>
