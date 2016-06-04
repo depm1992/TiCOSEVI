@@ -196,29 +196,29 @@ public class Preguntas {
                 "Línea de vía.", "Línea de centro.",
                 "Línea de barrera.", "Línea de centro.");
         Pregunta pre63 = new Pregunta(61, "¿La zona destinada a generar espacio para las emergencias se llama?", "",
-                "Canaleta.", "Calzada.",
-                "Espaldón.", "Espaldón.");
+                "Canaleta.", "Calzada.", "Espaldón.", "Espaldón.");
         Pregunta pre64 = new Pregunta(62, "Como complemento a la línea de vía se utilizan captaluces de color:", "",
-                "Blanco.", "Rojo.",
-                "Amarillo.", "Blanco.");
-        Pregunta pre65 = new Pregunta(63, "", "",
-                "", "",
-                "", "");
-        Pregunta pre66 = new Pregunta(64, "", "",
-                "", "",
-                "", "");
-        Pregunta pre67 = new Pregunta(65, "", "",
-                "", "",
-                "", "");
-        Pregunta pre68 = new Pregunta(66, "", "",
-                "", "",
-                "", "");
-        Pregunta pre69 = new Pregunta(67, "", "",
-                "", "",
-                "", "");
-        Pregunta pre70 = new Pregunta(68, "", "",
-                "", "",
-                "", "");
+                "Blanco.", "Rojo.", "Amarillo.", "Blanco.");
+        Pregunta pre65 = new Pregunta(63, "Para prevenir el choque de frente al adelantar, ¿Qué debemos hacer?", "",
+                "Observar por los espejos retrovisores.", "Eliminar el ángulo muerto.",
+                "Mirar siempre hacia delante, otro vehículo puede haber invadido su carril.", "Mirar siempre hacia delante, otro vehículo puede haber invadido su carril.");
+        Pregunta pre66 = new Pregunta(64, "La _______ resulta muy importante de conocer y controlar, sobre todo en tránsito urbano, por cuanto genera un alto consumo de combustible y desgaste. El texto anterior se completa con:\n", "",
+                "resistencia aerodinámica", "resistencia parásita",
+                "fuerza de inercia", "fuerza de inercia");
+        Pregunta pre67 = new Pregunta(65, "¿Cuáles son 2 condiciones emocionales o mentales que afectan la capacidad del conductor para manejar con seguridad?", "",
+                "Fatiga y agresividad.", "Sueño y cólera.",
+                "Negligencia y vanidad.", "Negligencia y vanidad.");
+        Pregunta pre68 = new Pregunta(66, "Si pensamos abandonar una rotonda por la primera salida, debemos utilizar:", "",
+                "El carril externo.", "Cualquier carril.",
+                "El carril interno.", "El carril externo.");
+        Pregunta pre69 = new Pregunta(67, "Advertir al usuario sobre la existencia de posibles peligros y óbstaculos en la vía es una función de:", "",
+                "La seguridad vial.", "El señalamiento vial.", "Las señales horizontales.", "El señalamiento vial.");
+        Pregunta pre70 = new Pregunta(68, "La imagen que se muestra corresponde a una señal de:", "unavia",
+                "Reglamentación.", "Información.",
+                "Prevención.", "Reglamentación.");
+        Pregunta pre71 = new Pregunta(69, "El factor lambda:", "",
+                "Establece una mezcla ideal de combustible y aceite.", "Establece una mezcla ideal de combustible y agua.",
+                "Establece una mezcla ideal de aire y combustible.", "Establece una mezcla ideal de aire y combustible.");
 
         this.preguntas.add(pre1);
         this.preguntas.add(pre2);
@@ -290,6 +290,7 @@ public class Preguntas {
         this.preguntas.add(pre68);
         this.preguntas.add(pre69);
         this.preguntas.add(pre70);
+        this.preguntas.add(pre71);
 
     }
 
