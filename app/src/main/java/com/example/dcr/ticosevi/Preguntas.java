@@ -99,6 +99,27 @@ public class Preguntas {
                 "Verticales.",
                 "Horizontales.","Luminosos.",
                 "Verticales.");
+        Pregunta pre31 = new Pregunta(29, "Cuando el conductor se sienta alterado por alguna condición mental o emocional, se recomienda:", "",
+                "Confiar el manejo de su automóvil a otra persona.", "Vender el automóvil.","Contratar un chofer personal.", "Confiar el manejo de su automóvil a otra persona.");
+        Pregunta pre32 = new Pregunta(30, "Por definición, sanción es:", "",
+                "Oficial de tránsito o juez de tránsito que castiga con multa al infractor.",
+                "Persona que incumpla una o más normas legales.","Pena o castigo que se aplica a una persona cuando infringe una o más normas legales..",
+                "Pena o castigo que se aplica a una persona cuando infringe una o más normas legales..");
+        Pregunta pre33 = new Pregunta(31, "¿El sistema de escape evacúa los gases quemados que resultan del proceso de combustión?", "",
+                "Falso.",
+                "Verdadero.","",
+                "Verdadero.");
+        Pregunta pre34 = new Pregunta(32, "El oficial procederá al retiro temporal de un vehículo en el siguiente caso:", "",
+                "Cuando el vehículo sea conducido por vía pública sin estar inscrito en el Registro Nacional.",
+                "Al conductor que permita que niños menores de 12 años que midan menos de 1,45 metros de estatura viajen sin dispositivos especiales de seguridad.",
+                "A quien adelante aprovechándose de maniobras de los vehículos de emergencia.",
+                "Cuando el vehículo sea conducido por vía pública sin estar inscrito en el Registro Nacional.");
+        Pregunta pre35 = new Pregunta(33, "La rotonda:", "",
+                "Es una construcción vial que permite librar un óbstaculo artificial como una vía férreas o carretera.",
+                "Es una construcción vial que permite el cruce de dos o más ejes de transporte a diferentes alturas.",
+                "Es una construcción vial diseñada para facilitar los cruces de vías..",
+                "Es una construcción vial diseñada para facilitar los cruces de vías.");
+        this.preguntas.add(pre32);
         this.preguntas.add(pre1);
         this.preguntas.add(pre2);
         this.preguntas.add(pre3);
@@ -129,6 +150,11 @@ public class Preguntas {
         this.preguntas.add(pre28);
         this.preguntas.add(pre29);
         this.preguntas.add(pre30);
+        this.preguntas.add(pre31);
+        this.preguntas.add(pre32);
+        this.preguntas.add(pre33);
+        this.preguntas.add(pre34);
+        this.preguntas.add(pre35);
 
     }
 
