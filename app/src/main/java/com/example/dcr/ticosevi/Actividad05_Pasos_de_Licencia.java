@@ -7,6 +7,7 @@ import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
+import android.widget.Button;
 
 public class Actividad05_Pasos_de_Licencia extends AppCompatActivity {
 
@@ -17,8 +18,24 @@ public class Actividad05_Pasos_de_Licencia extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        Intent intento = new Intent(getApplicationContext(), Actividad02.class);
-        startActivity(intento);
+
+        // alambramos el Button
+        Button MiButton = (Button) findViewById(R.id.btnok);
+
+        //Programamos el evento onclick
+
+        MiButton.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+
+            public void onClick(View arg0) {
+
+                Intent intento = new Intent(getApplicationContext(), Actividad02.class);
+                startActivity(intento);
+
+            }
+
+        });
     }
 
 }
