@@ -64,8 +64,19 @@ public class Preguntas {
                 "El exceso de velocidad.", "La hora del día en que se maneje.", "El calor ambiental.",
                 "La hora del día en que se maneje.");
         Pregunta pre18 = new Pregunta(16, "Una llanta con mucha presión:", "",
-                "Da más estabilidad al vehículo,", "Se desgastará más a los lados.", "Se desgastará más en el centro.",
+                "Da más estabilidad al vehículo.", "Se desgastará más a los lados.", "Se desgastará más en el centro.",
                 "Se desgastará más en el centro.");
+        Pregunta pre19 = new Pregunta(17, "El lugar de la vía pública donde convergen 2 o más vías es:", "",
+                "La intersección.", "El espaldón.", "La estructura vial.",
+                "La intersección.");
+        Pregunta pre20 = new Pregunta(18, "La trilogía vial se compone de 3 elementos, ¿Cuál elemento completa la siguiente imagen?", "triangulo",
+                "Factor emocional.", "Factor humano.", "Factor social.",
+                "Factor humano.");
+        Pregunta pre21 = new Pregunta(19, "Estos son los tres tipos de señalamiento luminoso:", "",
+                "Semáforo vehicular, semáforo peatonal y capta luces.", "Semáforo vehicular, semáforo peatonal y señalamiento preventivo.",
+                "Semáforo vehicular, semaforo peatonal y señal luminosa informativa.", "Semáforo vehicular, semaforo peatonal y señal luminosa informativa.");
+        Pregunta pre22 = new Pregunta(20, "A que conductor que en categoría novato acumule 6 puntos en su licencia recibe una suspensión de la misma por un período de:", "",
+                "1 año la primera vez.", "2 años la primera vez.", "6 meses la primera vez.", "1 año la primera vez.");
         this.preguntas.add(pre1);
         this.preguntas.add(pre2);
         this.preguntas.add(pre3);
@@ -84,6 +95,10 @@ public class Preguntas {
         this.preguntas.add(pre16);
         this.preguntas.add(pre17);
         this.preguntas.add(pre18);
+        this.preguntas.add(pre19);
+        this.preguntas.add(pre20);
+        this.preguntas.add(pre21);
+        this.preguntas.add(pre22);
 
     }
 
