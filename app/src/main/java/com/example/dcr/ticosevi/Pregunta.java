@@ -18,6 +18,7 @@ public class Pregunta {
         this.correcta = "Respesta vacia 1";
     }
 
+
     public Pregunta(int n, String pre, String ima, String pre1, String pre2, String pre3, String co){
         this.Numero = n;
         this.Pregunta = pre;

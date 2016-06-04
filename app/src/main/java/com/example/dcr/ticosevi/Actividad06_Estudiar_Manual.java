@@ -17,7 +17,7 @@ public class Actividad06_Estudiar_Manual extends Base {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        findViewById(R.id.button33).setOnClickListener(new View.OnClickListener() {
+        findViewById(R.id.btnregresar).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(Actividad06_Estudiar_Manual.this, Actividad02.class));
