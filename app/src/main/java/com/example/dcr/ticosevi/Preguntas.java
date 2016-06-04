@@ -54,6 +54,18 @@ public class Preguntas {
                 "Prevención de obras.", "Prevención.", "Información.", "Prevención.");
         Pregunta pre14 = new Pregunta(12, "¿Para obtener una licencia de conducir clase C se necesita haber obtenido la aprobación del Curso Básico de Educación Vial para Transporte Público?", "",
                 "Verdadero.", "Falso.", "", "Verdadero.");
+        Pregunta pre15 = new Pregunta(13, "La ley 9078 lleva como nombre:", "",
+                "Ley de Tránsito por Vías Públicas Terrestres y Seguridad Vial.", "Ley de Administración Vial.", "Ley de Tránsito.",
+                "Ley de Tránsito por Vías Públicas Terrestres y Seguridad Vial.");
+        Pregunta pre16 = new Pregunta(14, "En el semáforo vehicular la luz roja intermitente es equivalente a:", "semaforo",
+                "Una señal de alto.", "Una señal de ceda el paso.", "Prevención de peligro.",
+                "Una señal de alto.");
+        Pregunta pre17 = new Pregunta(15, "¿El sueño en la conducción puede ser provocado por?", "",
+                "El exceso de velocidad.", "La hora del día en que se maneje.", "El calor ambiental.",
+                "La hora del día en que se maneje.");
+        Pregunta pre18 = new Pregunta(16, "Una llanta con mucha presión:", "",
+                "Da más estabilidad al vehículo,", "Se desgastará más a los lados.", "Se desgastará más en el centro.",
+                "Se desgastará más en el centro.");
         this.preguntas.add(pre1);
         this.preguntas.add(pre2);
         this.preguntas.add(pre3);
@@ -68,6 +80,10 @@ public class Preguntas {
         this.preguntas.add(pre12);
         this.preguntas.add(pre13);
         this.preguntas.add(pre14);
+        this.preguntas.add(pre15);
+        this.preguntas.add(pre16);
+        this.preguntas.add(pre17);
+        this.preguntas.add(pre18);
 
     }
 
