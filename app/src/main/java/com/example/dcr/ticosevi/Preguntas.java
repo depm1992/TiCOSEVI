@@ -44,6 +44,16 @@ public class Preguntas {
                 "Nunca se debe adelantar y se debe mantener el mismo carril.");
         Pregunta pre9 = new Pregunta(7, "Además de aire y calor(chispa), que más se necesita para que el motor funcione:", "",
                 "Agua.", "Aceite.", "Combustible.", "Combustible.");
+        Pregunta pre10 = new Pregunta(8, "Son elementos físicos que se utilizan en la regulación del tránsito. Sirven para que el usuario, guiándose por sus indicaciones, se comporte con corrección y seguridad en las vías, disminuyendo así el riesgo de que ocurran accidentes.\n", "",
+                "Las señales.", "Líneas en la calzada (de centro, de vía, de barrera, de borde).", "Semáforos y capta luces.", "Las señales.");
+        Pregunta pre11 = new Pregunta(9, "Asegurarse de las buenas condiciones del vehículo y del conductor es una norma primordial que se debe observar y cumplir:", "",
+                "Cuando se ha iniciado la marcha en carretera.", "Antes de iniciar la circulación.", "Después de iniciada la circulación vehicular.", "Antes de iniciar la circulación.");
+        Pregunta pre12 = new Pregunta(10, "La imagen que se muestra corresponde a una señal de:", "obras",
+                "Información general.", "Prevención de obras.", "Recomendación.", "Prevención de obras.");
+        Pregunta pre13 = new Pregunta(11, "La imagen que se muestra corresponde a una señal de:", "prevencion",
+                "Prevención de obras.", "Prevención.", "Información.", "Prevención.");
+        Pregunta pre14 = new Pregunta(12, "¿Para obtener una licencia de conducir clase C se necesita haber obtenido la aprobación del Curso Básico de Educación Vial para Transporte Público?", "",
+                "Verdadero.", "Falso.", "", "Verdadero.");
         this.preguntas.add(pre1);
         this.preguntas.add(pre2);
         this.preguntas.add(pre3);
@@ -53,6 +63,11 @@ public class Preguntas {
         this.preguntas.add(pre7);
         this.preguntas.add(pre8);
         this.preguntas.add(pre9);
+        this.preguntas.add(pre10);
+        this.preguntas.add(pre11);
+        this.preguntas.add(pre12);
+        this.preguntas.add(pre13);
+        this.preguntas.add(pre14);
 
     }
 
