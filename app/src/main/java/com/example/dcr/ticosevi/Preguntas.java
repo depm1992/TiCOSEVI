@@ -24,6 +24,10 @@ public class Preguntas {
         return instance;
     }
 
+    public void reiniciar(){
+        instance = null;
+    }
+
     public void cargarPreguntas(){
         //Pregunta pre1 = new Pregunta();
         Pregunta pre2 = new Pregunta(0, "Significa aumentar la contaminación de nuestro planeta, el consumo de combustible y atentar contra la salud:\n",
@@ -32,7 +36,7 @@ public class Preguntas {
                 "Conservar en el mejor estado o sustituir los componentes del sistema de control de emisiones del motor.\n",
                 "La alteración de los elementos de control de emisiones del motor.");
         Pregunta pre3 = new Pregunta(1, "¿Es posible adelantar en una rotonda?", "", "Falso.",
-                "Verdadero.", "", "Falso.");
+                "Verdadero.", "N/D", "Falso.");
         Pregunta pre4 = new Pregunta(2, "La imagen que se muestra corresponde a una señal de:", "limitelargo", "Información.",
                 "Reglamentación.", "Prevención.", "Reglamentación.");
         Pregunta pre5 = new Pregunta(3, "Facilita el control de aceleración y potencia del motor dentro del rango que se determina como conducción económica y eficiente:",
@@ -55,7 +59,7 @@ public class Preguntas {
         Pregunta pre13 = new Pregunta(11, "La imagen que se muestra corresponde a una señal de:", "prevencion",
                 "Prevención de obras.", "Prevención.", "Información.", "Prevención.");
         Pregunta pre14 = new Pregunta(12, "¿Para obtener una licencia de conducir clase C se necesita haber obtenido la aprobación del Curso Básico de Educación Vial para Transporte Público?", "",
-                "Verdadero.", "Falso.", "", "Verdadero.");
+                "Verdadero.", "Falso.", "N/D", "Verdadero.");
         Pregunta pre15 = new Pregunta(13, "La ley 9078 lleva como nombre:", "",
                 "Ley de Tránsito por Vías Públicas Terrestres y Seguridad Vial.", "Ley de Administración Vial.", "Ley de Tránsito.",
                 "Ley de Tránsito por Vías Públicas Terrestres y Seguridad Vial.");
@@ -109,8 +113,7 @@ public class Preguntas {
                 "Pena o castigo que se aplica a una persona cuando infringe una o más normas legales..");
         Pregunta pre33 = new Pregunta(31, "¿El sistema de escape evacúa los gases quemados que resultan del proceso de combustión?", "",
                 "Falso.",
-                "Verdadero.","",
-                "Verdadero.");
+                "Verdadero.","N/D", "Verdadero.");
         Pregunta pre34 = new Pregunta(32, "El oficial procederá al retiro temporal de un vehículo en el siguiente caso:", "",
                 "Cuando el vehículo sea conducido por vía pública sin estar inscrito en el Registro Nacional.",
                 "Al conductor que permita que niños menores de 12 años que midan menos de 1,45 metros de estatura viajen sin dispositivos especiales de seguridad.",
@@ -338,5 +341,13 @@ public class Preguntas {
 
     public void setEstado(int estado) {
         this.estado = estado;
+    }
+
+    public void addRespondida(int pre){
+        this.respondidas.add(pre);
+    }
+
+    public boolean resExist(int pre){
+        return this.respondidas.contains(pre);
     }
 }
