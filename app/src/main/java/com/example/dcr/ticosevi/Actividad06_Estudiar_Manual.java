@@ -8,8 +8,8 @@ import android.widget.ImageView;
 
 public class Actividad06_Estudiar_Manual extends Base {
 
-    static int pos = 0;
-    static String[] imagenes = new String[224];
+    private static int pos = 0;
+    private static String[] imagenes = new String[224];
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
