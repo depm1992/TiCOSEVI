@@ -21,6 +21,10 @@ public class Actividad09_Resultado extends Base {
         findViewById(R.id.button34).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
+                Preguntas vg = Preguntas.getInstance();
+                vg.reiniciar();
+
                 startActivity(new Intent(Actividad09_Resultado.this, Actividad02.class));
             }
         });
