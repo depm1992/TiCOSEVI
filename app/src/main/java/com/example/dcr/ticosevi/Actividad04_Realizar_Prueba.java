@@ -2,11 +2,6 @@ package com.example.dcr.ticosevi;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
-import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.Toolbar;
-import android.view.View;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 
@@ -25,14 +20,13 @@ public class Actividad04_Realizar_Prueba extends Base {
                 RadioButton rb3 = (RadioButton) findViewById(R.id.rbDificil);
                 Preguntas vg = Preguntas.getInstance();
                 if (rb1.isChecked()) {
-                    vg.setNivel(1);
+                    vg.setNivel(10);
                 }
                 if (rb2.isChecked()) {
-                    vg.setNivel(2);
+                    vg.setNivel(20);
                 }
-
                 if (rb3.isChecked()) {
-                    vg.setNivel(3);
+                    vg.setNivel(40);
                 }
                 Intent intento = new Intent(getApplicationContext(), Actividad08_Pregunta.class);
                 startActivity(intento);

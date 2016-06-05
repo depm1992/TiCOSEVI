@@ -26,13 +26,20 @@ public class Actividad08_Pregunta extends Base {
             public void onClick(View arg0) {
                 Intent intento = new Intent(getApplicationContext(), Actividad01.class);
                 startActivity(intento);
+                Preguntas vg = Preguntas.getInstance();
+                vg.reiniciar();
             }
         });
 
         TextView tVPregunta = (TextView) findViewById(R.id.tVPregunta);
         int num = vg.getEstado() + 1;
-
-        Pregunta pre = vg.getPregunta(vg.getEstado());
+        int  ran = 0;
+        ran = (int)(Math.random()*(vg.getNivel()-0+1)+0);
+        while(vg.resExist(ran)){
+            ran = (int)(Math.random()*(vg.getNivel()-0+1)+0);
+        }
+        vg.addRespondida(ran);
+        Pregunta pre = vg.getPregunta(ran);
 
         tVPregunta.setText(num + ". " + pre.getPregunta());
 
@@ -43,7 +50,7 @@ public class Actividad08_Pregunta extends Base {
         tVMalas.setText(vg.getMalas() + "");
 
         ProgressBar proge = (ProgressBar) findViewById(R.id.proBarPregunta);
-        proge.setProgress((int) (vg.getEstado() * 100 / vg.getSize()));
+        proge.setProgress((int) (vg.getEstado() * 100 / vg.getNivel()));
         //int color = 0xFF00FF00;
         //proge.getIndeterminateDrawable().setColorFilter(color, PorterDuff.Mode.SRC_IN);
         //proge.getProgressDrawable().setColorFilter(color, PorterDuff.Mode.SRC_IN);
@@ -105,8 +112,13 @@ public class Actividad08_Pregunta extends Base {
                     }
                 }
                 vg.setEstado(vg.getEstado() + 1);
-                Intent intento = new Intent(getApplicationContext(), Actividad08_Pregunta.class);
-                startActivity(intento);
+                if(vg.getEstado() == vg.getNivel()){
+                    Intent intento = new Intent(getApplicationContext(), Actividad09_Resultado.class);
+                    startActivity(intento);
+                }else{
+                    Intent intento = new Intent(getApplicationContext(), Actividad08_Pregunta.class);
+                    startActivity(intento);
+                }
             }
         });
         //fin de oncreate
