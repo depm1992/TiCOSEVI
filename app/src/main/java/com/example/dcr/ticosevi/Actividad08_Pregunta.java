@@ -9,8 +9,20 @@ import android.widget.ProgressBar;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class Actividad08_Pregunta extends Base {
+
+    @Override
+    public void onBackPressed() {
+        Toast.makeText(getApplicationContext(), "Te atrape", Toast.LENGTH_LONG).show();
+        // super.onBackPressed(); habilite esto si desea que se devuelva con el boton back
+        Intent intento = new Intent(getApplicationContext(), Actividad01.class);
+        startActivity(intento);
+        Preguntas vg = Preguntas.getInstance();
+        vg.reiniciar();
+        vg = Preguntas.getInstance();
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,10 +36,10 @@ public class Actividad08_Pregunta extends Base {
         btnRregresar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View arg0) {
-                Intent intento = new Intent(getApplicationContext(), Actividad01.class);
-                startActivity(intento);
                 Preguntas vg = Preguntas.getInstance();
                 vg.reiniciar();
+                Intent intento = new Intent(getApplicationContext(), Actividad01.class);
+                startActivity(intento);
             }
         });
 
@@ -125,5 +137,7 @@ public class Actividad08_Pregunta extends Base {
 
         //fin onCreate
     }
+
+
 
 }

@@ -97,6 +97,8 @@
 
     <TextView
         android:id="@+id/tVBuenas"
+        android:ems="2"
+        android:textAlignment="center"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="#83fb54"
@@ -113,6 +115,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="#fa6868"
+        android:ems="2"
+        android:textAlignment="center"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
         android:text="30"
