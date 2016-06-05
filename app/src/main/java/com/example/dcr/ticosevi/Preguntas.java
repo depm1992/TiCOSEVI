@@ -157,7 +157,7 @@ public class Preguntas {
         Pregunta pre50 = new Pregunta(48, "Consiste en un grado de elevación mayor en uno de los extremos de la calzada:", "",
                 "Peralte o sobreelevación.", "Resistencia aerodinámica.",
                 "Espaldón.", "Peralte o sobreelevación.");
-        Pregunta pre51 = new Pregunta(49, "El significado de la imagen que se muestra es:", "niño",
+        Pregunta pre51 = new Pregunta(49, "El significado de la imagen que se muestra es:", "nino",
                 "Zona escolar.", "Niños jugando en la carretera.",
                 "Campos de juego.", "Campos de juego.");
         Pregunta pre52 = new Pregunta(50, "Son para el cruce de peatones en lugares con gran tránsito peatonal, se pintan como franjas anchas discontinuas paralelas entre sí:", "",
