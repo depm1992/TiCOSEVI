@@ -53,7 +53,9 @@
         <activity
             android:name=".VerNotasObtenidas"
             android:label="@string/title_activity_ver_notas_obtenidas"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".Actividad07_Videos" />
+        <activity android:name=".Actividad10_Estudiar"></activity>
     </application>
 
 </manifest>

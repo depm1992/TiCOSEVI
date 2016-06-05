@@ -55,7 +55,7 @@ public class Actividad02 extends Base {
                         break;
 
                     case R.id.button5:
-                        startActivity(new Intent(Actividad02.this, Actividad06_Estudiar_Manual.class));
+                        startActivity(new Intent(Actividad02.this, Actividad10_Estudiar.class));
                         break;
                     case R.id.button7:
                         startActivity(new Intent(Actividad02.this, VerNotasObtenidas.class));
