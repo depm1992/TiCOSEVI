@@ -50,7 +50,7 @@ public class Actividad08_Pregunta extends Base {
         tVMalas.setText(vg.getMalas() + "");
 
         ProgressBar proge = (ProgressBar) findViewById(R.id.proBarPregunta);
-        proge.setProgress((int) (vg.getEstado() * 100 / vg.getSize()));
+        proge.setProgress((int) (vg.getEstado() * 100 / vg.getNivel()));
         //int color = 0xFF00FF00;
         //proge.getIndeterminateDrawable().setColorFilter(color, PorterDuff.Mode.SRC_IN);
         //proge.getProgressDrawable().setColorFilter(color, PorterDuff.Mode.SRC_IN);
