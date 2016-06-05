@@ -15,13 +15,14 @@ public class Actividad08_Pregunta extends Base {
 
     @Override
     public void onBackPressed() {
-        Toast.makeText(getApplicationContext(), "Te atrape", Toast.LENGTH_LONG).show();
+        Toast.makeText(getApplicationContext(), "No esta permitido volver a hacer las preguntas inicia de nuevo", Toast.LENGTH_LONG).show();
         // super.onBackPressed(); habilite esto si desea que se devuelva con el boton back
-        Intent intento = new Intent(getApplicationContext(), Actividad01.class);
+        Intent intento = new Intent(getApplicationContext(), Actividad08_Pregunta.class);
         startActivity(intento);
         Preguntas vg = Preguntas.getInstance();
-        vg.reiniciar();
-        vg = Preguntas.getInstance();
+        vg.setEstado(0);
+        vg.setMalas(0);
+        vg.setBuenas(0);
     }
 
     @Override
