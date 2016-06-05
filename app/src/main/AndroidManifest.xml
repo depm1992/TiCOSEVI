@@ -49,6 +49,10 @@
         <activity
             android:name=".Actividad05__Pasos_de__Licencia"
             android:label="@string/title_activity_actividad05__pasos_de__licencia"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".VerNotasObtenidas"
+            android:label="@string/title_activity_ver_notas_obtenidas"
             android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
