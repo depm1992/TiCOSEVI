@@ -55,7 +55,14 @@
             android:label="@string/title_activity_ver_notas_obtenidas"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".Actividad07_Videos" />
-        <activity android:name=".Actividad10_Estudiar"></activity>
+        <activity android:name=".Actividad10_Estudiar" />
+        <activity android:name=".Reproduciendo" />
+        <activity android:name=".Reproduciendo2" />
+        <activity
+            android:name=".Reproduciendo3"
+            android:label="@string/title_activity_reproduciendo3"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".Reproduciendo4"></activity>
     </application>
 
 </manifest>
