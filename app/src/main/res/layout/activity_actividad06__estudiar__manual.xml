@@ -23,6 +23,4 @@
 
     <include layout="@layout/content_actividad06__estudiar__manual" />
 
-
-
 </android.support.design.widget.CoordinatorLayout>
