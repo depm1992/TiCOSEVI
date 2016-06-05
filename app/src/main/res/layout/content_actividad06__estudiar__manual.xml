@@ -42,11 +42,12 @@
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@+id/imageView"
+        android:id="@+id/iVEstudiarManual"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_above="@+id/btnanterior"
-        android:layout_below="@+id/textView26" />
+        android:layout_below="@+id/textView26"
+        android:src="@drawable/a1" />
 
     <Button
         android:layout_width="wrap_content"
@@ -54,7 +55,7 @@
         android:text="Regresar"
         android:id="@+id/btnregresar"
         android:layout_alignTop="@+id/btnsiguiente"
-        android:layout_alignRight="@+id/imageView"
-        android:layout_alignEnd="@+id/imageView" />
+        android:layout_alignRight="@+id/iVEstudiarManual"
+        android:layout_alignEnd="@+id/iVEstudiarManual" />
 
 </RelativeLayout>

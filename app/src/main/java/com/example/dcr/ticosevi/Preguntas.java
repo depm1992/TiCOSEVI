@@ -37,7 +37,7 @@ public class Preguntas {
                 "La alteración de los elementos de control de emisiones del motor.");
         Pregunta pre3 = new Pregunta(1, "¿Es posible adelantar en una rotonda?", "N/D", "Falso.", "Verdadero.", "N/D", "Falso.");
         Pregunta pre4 = new Pregunta(2, "La imagen que se muestra corresponde a una señal de:", "limitelargo", "Información.",
-                "Reglamentación.", "Prevención.", "Reglamentación.");
+                "Reglamentacion.", "Prevención.", "Reglamentacion.");
         Pregunta pre5 = new Pregunta(3, "Facilita el control de aceleración y potencia del motor dentro del rango que se determina como conducción económica y eficiente:",
                 "N/D", "El medidor de velocidad.", "El medidor de temperatura.", "El tacómetro.", "El tacómetro.");
         Pregunta pre6 = new Pregunta(4, "Cuál es un componente del sistema de escape?:",
