@@ -7,9 +7,11 @@ public class Preguntas {
     private static Preguntas instance = null;
     private int nivel = 0;//1 -> 10, 2-> 20, 3-> 40
     private ArrayList<Pregunta> preguntas = new ArrayList<>(); //el array debe ser de obejtos preguta o de lo que se cargue de la base de datos
+    private ArrayList<Integer> respondidas = new ArrayList<>();
     private int buenas = 0;
     private int malas = 0;
     private int estado = 0;
+
 
     protected Preguntas(){
     }
@@ -17,13 +19,13 @@ public class Preguntas {
     public static Preguntas getInstance() {
         if(instance == null) {
             instance = new Preguntas();
-            instance.cargarPrueba();
+            instance.cargarPreguntas();
         }
         return instance;
     }
 
-    public void cargarPrueba(){
-        Pregunta pre1 = new Pregunta();
+    public void cargarPreguntas(){
+        //Pregunta pre1 = new Pregunta();
         Pregunta pre2 = new Pregunta(0, "Significa aumentar la contaminación de nuestro planeta, el consumo de combustible y atentar contra la salud:\n",
                 "", "Comprobar el buen estado de los dispositivos del sistema de control de emisiones del motor.\n",
                 "La alteración de los elementos de control de emisiones del motor.\n",
@@ -220,7 +222,7 @@ public class Preguntas {
                 "Establece una mezcla ideal de combustible y aceite.", "Establece una mezcla ideal de combustible y agua.",
                 "Establece una mezcla ideal de aire y combustible.", "Establece una mezcla ideal de aire y combustible.");
 
-        this.preguntas.add(pre1);
+        //this.preguntas.add(pre1);
         this.preguntas.add(pre2);
         this.preguntas.add(pre3);
         this.preguntas.add(pre4);

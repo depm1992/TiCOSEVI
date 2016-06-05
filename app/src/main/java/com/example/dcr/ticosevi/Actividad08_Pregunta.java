@@ -18,7 +18,7 @@ public class Actividad08_Pregunta extends Base {
         setContentView(R.layout.activity_actividad08__pregunta);
 
         Preguntas vg = Preguntas.getInstance();
-        Mensaje("El Nivel es: " + vg.getNivel());
+        //Mensaje("El Nivel es: " + vg.getNivel());
 
         Button btnRregresar = (Button) findViewById(R.id.btnRregresar);
         btnRregresar.setOnClickListener(new View.OnClickListener() {
@@ -31,7 +31,9 @@ public class Actividad08_Pregunta extends Base {
 
         TextView tVPregunta = (TextView) findViewById(R.id.tVPregunta);
         int num = vg.getEstado() + 1;
+
         Pregunta pre = vg.getPregunta(vg.getEstado());
+
         tVPregunta.setText(num + ". " + pre.getPregunta());
 
         TextView tVBuenas = (TextView) findViewById(R.id.tVBuenas);
