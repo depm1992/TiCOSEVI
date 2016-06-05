@@ -23,6 +23,7 @@ public class Actividad02 extends Base {
         OnclickDelButton(R.id.button6);
         OnclickDelButton(R.id.button8);
         OnclickDelButton(R.id.button5);
+        OnclickDelButton(R.id.button7);
         //OnclickDelButton(R.id.button5);
 
     }
@@ -56,7 +57,9 @@ public class Actividad02 extends Base {
                     case R.id.button5:
                         startActivity(new Intent(Actividad02.this, Actividad06_Estudiar_Manual.class));
                         break;
-
+                    case R.id.button7:
+                        startActivity(new Intent(Actividad02.this, VerNotasObtenidas.class));
+                        break;
                    /* case R.id.Subutton5:
                         Mensaje("Implementar Button5");
                         break;
