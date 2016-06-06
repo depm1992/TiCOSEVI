@@ -10,33 +10,38 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context=".Actividad09_Resultado"
-    tools:showIn="@layout/activity_actividad09__resultado">
+    tools:showIn="@layout/activity_actividad09__resultado"
+    android:background="#c2fcd9">
 
     <TextView
-        android:layout_width="200dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:text="NOTA"
         android:id="@+id/textView27"
+        android:layout_marginTop="159dp"
         android:textColor="#0e0e0e"
         android:textSize="30dp"
-        android:layout_alignWithParentIfMissing="false"
-        android:layout_above="@+id/button34"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="145dp" />
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/button34"
+        android:layout_alignStart="@+id/button34" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Finalizar"
         android:id="@+id/button34"
-        android:background="#2db61e"
-        android:layout_alignParentBottom="true"
+        android:layout_marginTop="106dp"
+        android:layout_below="@+id/textView27"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="106dp" />
+        android:background="#2db61e" />
 
     <TextView
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:text="La nota de la prueba es: "
         android:id="@+id/textView22"
+        android:textSize="22dp"
+        android:textColor="#0c0c0c"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true" />
 
