@@ -14,4 +14,5 @@
     <string name="title_activity_ver_notas_obtenidas">Mis Notas</string>
     <string name="title_activity_reproduciendo3">Reproduciendo3</string>
     <string name="title_activity_manual">Manual</string>
+    <string name="title_activity_mapa">Map</string>
 </resources>
