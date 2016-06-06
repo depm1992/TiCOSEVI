@@ -35,10 +35,6 @@
             android:label="@string/title_activity_actividad05__pasos_de__licencia"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".Actividad06_Estudiar_Manual"
-            android:label="@string/title_activity_actividad06__estudiar__manual"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity
             android:name=".Actividad09_Resultado"
             android:label="@string/title_activity_activivdad07__resultado"
             android:theme="@style/AppTheme.NoActionBar" />
