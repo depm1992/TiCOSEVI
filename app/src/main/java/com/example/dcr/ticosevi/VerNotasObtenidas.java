@@ -27,15 +27,30 @@ public class VerNotasObtenidas extends AppCompatActivity {
             @Override
 
             public void onClick(View arg0) {
-                CrearBD();
-                AgregarDato();
+                notaObtenida();
             }
 
         });
 
     }
 
-    //Colocar en la clase Base
+    public void Mensaje(String msg) {
+        Toast.makeText(getApplicationContext(), msg, Toast.LENGTH_LONG).show();
+    };
+
+    public String notaObtenida(){
+        Preguntas vg = Preguntas.getInstance();
+        String[] notasAltas= new String[30];
+        String res="";
+
+        for (int i=0; i<=vg.getBuenas();i++){
+            res=notasAltas[i];
+            Mensaje("La nota es: "+res);
+        }
+        return res;
+    }
+
+   /* //Colocar en la clase Base
     DBAdapter db;
 
     public void CrearBD() {
@@ -100,6 +115,6 @@ public class VerNotasObtenidas extends AppCompatActivity {
         Mensaje("id: " + c.getString(0) + "\n" +
                 "Nombre: " + c.getString(1) + "\n" +
                 "Dir:  " + c.getString(2));
-    }
+    }*/
 
 }
