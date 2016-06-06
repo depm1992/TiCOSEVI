@@ -13,6 +13,8 @@ import android.widget.Toast;
 
 public class Actividad08_Pregunta extends Base {
 
+    private static Pregunta pre;
+
     @Override
     public void onBackPressed() {
         Toast.makeText(getApplicationContext(), "No esta permitido volver a hacer las preguntas inicia de nuevo", Toast.LENGTH_LONG).show();
@@ -52,7 +54,7 @@ public class Actividad08_Pregunta extends Base {
             ran = (int)(Math.random()*(vg.getNivel()-0+1)+0);
         }
         vg.addRespondida(ran);
-        Pregunta pre = vg.getPregunta(ran);
+        pre = vg.getPregunta(ran);
 
         tVPregunta.setText(num + ". " + pre.getPregunta());
 
@@ -88,9 +90,9 @@ public class Actividad08_Pregunta extends Base {
         }
 
         if (!pre.getRespuestas(2).equals("N/D")) {
-            RadioButton rb2 = (RadioButton) findViewById(R.id.rbRes3);
-            rb2.setText(pre.getRespuestas(2));
-            rb2.setVisibility(View.VISIBLE);
+            RadioButton rb3 = (RadioButton) findViewById(R.id.rbRes3);
+            rb3.setText(pre.getRespuestas(2));
+            rb3.setVisibility(View.VISIBLE);
         }
 
 
@@ -101,7 +103,6 @@ public class Actividad08_Pregunta extends Base {
                 RadioButton rb2 = (RadioButton) findViewById(R.id.rbRes2);
                 RadioButton rb3 = (RadioButton) findViewById(R.id.rbRes3);
                 Preguntas vg = Preguntas.getInstance();
-                Pregunta pre = vg.getPregunta(vg.getEstado());
                 if (rb1.isChecked()) {
                     if (pre.getRespuestas(0).equals(pre.getCorrecta())) {
                         vg.setBuenas(vg.getBuenas() + 1);
