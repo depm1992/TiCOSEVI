@@ -34,7 +34,7 @@ public class Manual extends Base {
         if (pos != 224) {
             ImageView iVPre = (ImageView) findViewById(R.id.imageView3);
             String aux = "a";
-            Mensaje(pos + "");
+            //Mensaje(pos + "");
             if(pos != 0){
                 aux = aux + pos;
             }
