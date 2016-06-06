@@ -18,22 +18,21 @@
         android:layout_height="wrap_content"
         android:text="NOTA"
         android:id="@+id/textView27"
-        android:layout_marginTop="159dp"
         android:textColor="#0e0e0e"
         android:textSize="30dp"
-        android:layout_alignParentTop="true"
-        android:layout_alignLeft="@+id/button34"
-        android:layout_alignStart="@+id/button34" />
+        android:layout_below="@+id/textView22"
+        android:layout_centerHorizontal="true" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Finalizar"
         android:id="@+id/button34"
-        android:layout_marginTop="106dp"
-        android:layout_below="@+id/textView27"
-        android:layout_centerHorizontal="true"
-        android:background="#2db61e" />
+        android:background="#2db61e"
+        android:layout_marginBottom="44dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/textView27"
+        android:layout_alignEnd="@+id/textView27" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -44,5 +43,24 @@
         android:textColor="#0c0c0c"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btndialogo"
+        android:background="#2db61e"
+        android:layout_alignTop="@+id/button34"
+        android:layout_toLeftOf="@+id/textView27"
+        android:layout_toStartOf="@+id/textView27"
+        android:visibility="invisible" />
+
+    <WebView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/webView2"
+        android:layout_below="@+id/textView27"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_above="@+id/button34" />
 
 </RelativeLayout>

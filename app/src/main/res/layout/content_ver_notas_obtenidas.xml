@@ -10,6 +10,14 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context="com.example.dcr.ticosevi.VerNotasObtenidas"
-    tools:showIn="@layout/activity_ver_notas_obtenidas">
+    tools:showIn="@layout/activity_ver_notas_obtenidas"
+    android:background="#bdf9ba">
 
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Puntuaciones"
+        android:id="@+id/btnpuntos"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
 </RelativeLayout>
