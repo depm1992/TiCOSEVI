@@ -34,7 +34,7 @@ public class Actividad10_Estudiar extends AppCompatActivity {
                 switch (v.getId()) {
 
                     case R.id.btnManual:
-                        Intent intento = new Intent(getApplicationContext(), Actividad06_Estudiar_Manual.class);
+                        Intent intento = new Intent(getApplicationContext(), Manual.class);
                         startActivity(intento);
                         break;
 

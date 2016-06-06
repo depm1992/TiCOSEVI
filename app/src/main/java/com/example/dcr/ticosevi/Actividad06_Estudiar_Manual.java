@@ -8,7 +8,7 @@ import android.widget.ImageView;
 
 public class Actividad06_Estudiar_Manual extends Base {
 
-    private static int pos = 0;
+    private static int pos = 1;
     private static String[] imagenes = new String[224];
 
 
@@ -20,7 +20,7 @@ public class Actividad06_Estudiar_Manual extends Base {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        cargarImangenes();
+       /* cargarImangenes();
 
         findViewById(R.id.btnanterior).setOnClickListener(new View.OnClickListener() {
             @Override
@@ -53,7 +53,7 @@ public class Actividad06_Estudiar_Manual extends Base {
             public void onClick(View v) {
                 startActivity(new Intent(Actividad06_Estudiar_Manual.this, Actividad02.class));
             }
-        });
+        });*/
     }
 
     public void cargarImangenes() {

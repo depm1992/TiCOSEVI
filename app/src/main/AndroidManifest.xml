@@ -62,7 +62,11 @@
             android:name=".Reproduciendo3"
             android:label="@string/title_activity_reproduciendo3"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".Reproduciendo4"></activity>
+        <activity android:name=".Reproduciendo4" />
+        <activity
+            android:name=".Manual"
+            android:label="@string/title_activity_manual"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>

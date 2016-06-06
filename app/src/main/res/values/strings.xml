@@ -13,4 +13,5 @@
     <string name="title_activity_actividad08__pregunta">Preguntas</string>
     <string name="title_activity_ver_notas_obtenidas">VerNotasObtenidas</string>
     <string name="title_activity_reproduciendo3">Reproduciendo3</string>
+    <string name="title_activity_manual">Manual</string>
 </resources>
