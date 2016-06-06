@@ -55,6 +55,10 @@ public class Actividad09_Resultado extends Base {
             builder1.setPositiveButton("Si",
                     new DialogInterface.OnClickListener() {
                         public void onClick(DialogInterface dialog, int id) {
+
+                            Preguntas vg = Preguntas.getInstance();
+                            vg.reiniciar();
+
                             WebView webView = (WebView) findViewById(R.id.webView2);
                             webView.setWebViewClient(new Callback());
                             WebSettings webSettings = webView.getSettings();
@@ -65,7 +69,15 @@ public class Actividad09_Resultado extends Base {
             builder1.setNegativeButton("No",
                     new DialogInterface.OnClickListener() {
                         public void onClick(DialogInterface dialog, int id) {
-                            Mensaje("Hasta pronto!");
+                            Preguntas vg = Preguntas.getInstance();
+                            vg.reiniciar();
+
+                            TextView msm = (TextView) findViewById(R.id.textView22);
+                            msm.setText( "");
+
+
+                            TextView tVBuenas = (TextView) findViewById(R.id.textView27);
+                            tVBuenas.setText( "¡HASTA PRONTO!");
                         }
                     });
             AlertDialog alert11 = builder1.create();
@@ -78,6 +90,8 @@ public class Actividad09_Resultado extends Base {
             builder1.setPositiveButton("Si",
                     new DialogInterface.OnClickListener() {
                         public void onClick(DialogInterface dialog, int id) {
+                            Preguntas vg = Preguntas.getInstance();
+                            vg.reiniciar();
 
                             Intent intento = new Intent(getApplicationContext(), Actividad10_Estudiar.class);
                             startActivity(intento);
@@ -86,7 +100,16 @@ public class Actividad09_Resultado extends Base {
             builder1.setNegativeButton("No",
                     new DialogInterface.OnClickListener() {
                         public void onClick(DialogInterface dialog, int id) {
-                            Mensaje("Hasta pronto!");
+
+                            Preguntas vg = Preguntas.getInstance();
+                            vg.reiniciar();
+
+                            TextView msm = (TextView) findViewById(R.id.textView22);
+                            msm.setText( "");
+
+
+                            TextView tVBuenas = (TextView) findViewById(R.id.textView27);
+                            tVBuenas.setText( "¡HASTA PRONTO!");
                         }
                     });
             AlertDialog alert11 = builder1.create();
