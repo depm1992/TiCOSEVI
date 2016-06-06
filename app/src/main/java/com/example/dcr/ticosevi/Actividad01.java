@@ -27,6 +27,12 @@ public class Actividad01 extends Base {
                 startActivity(new Intent(Actividad01.this, Actividad03_AcercaDe.class));
             }
         });
+        findViewById(R.id.button3).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                System.exit(0);
+            }
+        });
     }
 
     @Override
