@@ -4,12 +4,15 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageView;
+
+import java.util.ArrayList;
 
 public class Actividad06_Estudiar_Manual extends Base {
 
-    private static int pos = 1;
-    private static String[] imagenes = new String[224];
+    private static int pos = 0;
+    private static ArrayList<String> imagenes =  new ArrayList<>();
 
 
     @Override
@@ -20,7 +23,7 @@ public class Actividad06_Estudiar_Manual extends Base {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-       /* cargarImangenes();
+        cargarImangenes();
 
         findViewById(R.id.btnanterior).setOnClickListener(new View.OnClickListener() {
             @Override
@@ -28,21 +31,28 @@ public class Actividad06_Estudiar_Manual extends Base {
                 pos--;
                 if (pos != 0) {
                     ImageView iVPre = (ImageView) findViewById(R.id.iVEstudiarManual);
-                    String aux = imagenes[pos];
+                    String aux = imagenes.get(pos);
+                    Mensaje(imagenes.get(pos));
                     int res_imagen = getResources().getIdentifier(aux, "drawable", getPackageName());
                     iVPre.setImageResource(res_imagen);
                 }
             }
         });
 
-        findViewById(R.id.btnsiguiente).setOnClickListener(new View.OnClickListener() {
+        Button btnsiguiente = (Button) findViewById(R.id.btnsiguiente);
+        //Programamos el evento onclick
+        btnsiguiente.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v) {
+            public void onClick(View arg0) {
                 pos++;
                 if (pos != 224) {
                     ImageView iVPre = (ImageView) findViewById(R.id.iVEstudiarManual);
-                    String aux = imagenes[pos];
-                    int res_imagen = getResources().getIdentifier(aux, "drawable", getPackageName());
+                    String aux = "a";
+                    if(pos != 0){
+                        aux = aux + pos;
+                    }
+                    int res_imagen = getResources().getIdentifier("a1", "drawable", getPackageName());
+                    Mensaje(res_imagen + "");
                     iVPre.setImageResource(res_imagen);
                 }
             }
@@ -53,11 +63,12 @@ public class Actividad06_Estudiar_Manual extends Base {
             public void onClick(View v) {
                 startActivity(new Intent(Actividad06_Estudiar_Manual.this, Actividad02.class));
             }
-        });*/
+        });
     }
 
     public void cargarImangenes() {
-        imagenes[0] = "a1";
-        imagenes[1] = "a2";
+        imagenes.add("a");
+        imagenes.add("a1");
+        imagenes.add("a2");
     }
 }
