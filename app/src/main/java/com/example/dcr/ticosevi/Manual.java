@@ -1,14 +1,16 @@
 package com.example.dcr.ticosevi;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
+import android.webkit.WebSettings;
+import android.webkit.WebView;
+import android.webkit.WebViewClient;
+import android.widget.Button;
 import android.widget.ImageView;
 
 public class Manual extends Base {
-
-    private static int pos = 1;
-    private static String[] imagenes = new String[224];
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -17,36 +19,32 @@ public class Manual extends Base {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        cargarImagenes();
+        WebView webView = (WebView) findViewById(R.id.webView);
+        webView.setWebViewClient(new Callback());
+        WebSettings webSettings = webView.getSettings();
+        webSettings.setBuiltInZoomControls(true);
+        webView.loadUrl("https://www.google.com");
 
-        findViewById(R.id.btnsiguiente).setOnClickListener(new View.OnClickListener() {
+
+        Button MiButton = (Button) findViewById(R.id.btnvolver);
+        MiButton.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v) {
-                Mensaje(pos + "");
-                next();
+            public void onClick(View arg0) {
+                Intent intento = new Intent(getApplicationContext(), Actividad10_Estudiar.class);
+                startActivity(intento);
             }
+
         });
-    }
+    }// fin del  oncreate (ojo con esto!!)
 
-    public void next(){
-        pos++;
-
-        if (pos != 224) {
-            ImageView iVPre = (ImageView) findViewById(R.id.imageView3);
-            String aux = "a";
-            //Mensaje(pos + "");
-            if(pos != 0){
-                aux = aux + pos;
-            }
-            int res_imagen = getResources().getIdentifier(aux, "drawable", getPackageName());
-            Mensaje(res_imagen + "");
-            iVPre.setImageResource(res_imagen);
-        }
-    }
-
-    public void cargarImagenes() {
-        imagenes[0] = "a1";
-        imagenes[1] = "a2";
-    }
+    class Callback extends WebViewClient {
+        @Override
+        public boolean shouldOverrideUrlLoading(WebView view, String url) {
+            return (false);
+        }}
 
 }
+
+
+
+
