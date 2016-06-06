@@ -13,25 +13,31 @@
     tools:showIn="@layout/activity_actividad09__resultado">
 
     <TextView
-        android:layout_width="wrap_content"
+        android:layout_width="200dp"
         android:layout_height="wrap_content"
-        android:text="AQUÍ SE MOSTRARÁ SU RESULTADO"
         android:id="@+id/textView27"
-        android:layout_marginTop="157dp"
         android:textColor="#0e0e0e"
         android:textSize="30dp"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
+        android:layout_alignWithParentIfMissing="false"
+        android:layout_above="@+id/button34"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="145dp" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Finalizar"
         android:id="@+id/button34"
-        android:layout_marginTop="106dp"
-        android:layout_below="@+id/textView27"
+        android:background="#2db61e"
+        android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:background="#2db61e" />
+        android:layout_marginBottom="106dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView22"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
 
 </RelativeLayout>
