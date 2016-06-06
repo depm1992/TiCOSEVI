@@ -7,6 +7,7 @@ import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
+import android.widget.TextView;
 
 public class Actividad09_Resultado extends Base {
 
@@ -16,6 +17,13 @@ public class Actividad09_Resultado extends Base {
         setContentView(R.layout.activity_actividad09__resultado);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+
+        Preguntas vg = Preguntas.getInstance();
+        TextView tVBuenas = (TextView) findViewById(R.id.textView27);
+        tVBuenas.setText(vg.getBuenas() + "");
+
+
+                //vg.getBuenas();
 
 
         findViewById(R.id.button34).setOnClickListener(new View.OnClickListener() {
