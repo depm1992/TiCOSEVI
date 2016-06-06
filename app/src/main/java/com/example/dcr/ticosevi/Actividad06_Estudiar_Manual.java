@@ -44,17 +44,7 @@ public class Actividad06_Estudiar_Manual extends Base {
         btnsiguiente.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View arg0) {
-                pos++;
-                if (pos != 224) {
-                    ImageView iVPre = (ImageView) findViewById(R.id.iVEstudiarManual);
-                    String aux = "a";
-                    if(pos != 0){
-                        aux = aux + pos;
-                    }
-                    int res_imagen = getResources().getIdentifier("a1", "drawable", getPackageName());
-                    Mensaje(res_imagen + "");
-                    iVPre.setImageResource(res_imagen);
-                }
+                next();
             }
         });
 
@@ -64,6 +54,21 @@ public class Actividad06_Estudiar_Manual extends Base {
                 startActivity(new Intent(Actividad06_Estudiar_Manual.this, Actividad02.class));
             }
         });
+    }
+
+    public void next(){
+        //pos++;
+        if (pos != 224) {
+            ImageView iVPre = (ImageView) findViewById(R.id.iVEstudiarManual);
+            String aux = "a";
+            Mensaje(pos + "");
+            if(pos != 0){
+                aux = aux + pos;
+            }
+            int res_imagen = getResources().getIdentifier(aux, "drawable", getPackageName());
+            Mensaje(res_imagen + "");
+            iVPre.setImageResource(res_imagen);
+        }
     }
 
     public void cargarImangenes() {
