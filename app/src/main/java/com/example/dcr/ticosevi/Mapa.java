@@ -114,6 +114,38 @@ public class Mapa extends FragmentActivity implements OnMapReadyCallback {
         int zoomLevel = 7; //This goes up to 21
         mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(milugar, zoomLevel));
 
+
+
+        // Add a marker in milugar and move the camera
+        LatLng milugar2 = new LatLng(9.931566, -84.073709);
+//mMap.getMinZoomLevel();
+        mMap.addMarker(new MarkerOptions().icon(BitmapDescriptorFactory.fromResource(R.drawable.viaje)).position(milugar2).title("Escuela de manejo Rodriguez"));
+        int zoomLevel2 = 7; //This goes up to 21
+        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(milugar2, zoomLevel2));
+
+        // Add a marker in milugar and move the camera
+        LatLng milugar3 = new LatLng(10.329018, -84.340127);
+//mMap.getMinZoomLevel();
+        mMap.addMarker(new MarkerOptions().icon(BitmapDescriptorFactory.fromResource(R.drawable.viaje)).position(milugar3).title("Escuela de manejo del norte"));
+        int zoomLevel3 = 7; //This goes up to 21
+        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(milugar3, zoomLevel3));
+
+
+        // Add a marker in milugar and move the camera
+        LatLng milugar4 = new LatLng(9.996577, -84.131080);
+//mMap.getMinZoomLevel();
+        mMap.addMarker(new MarkerOptions().icon(BitmapDescriptorFactory.fromResource(R.drawable.viaje)).position(milugar4).title("Escuela de manejo Educar"));
+        int zoomLevel4 = 7; //This goes up to 21
+        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(milugar4, zoomLevel4));
+
+
+        // Add a marker in milugar and move the camera
+        LatLng milugar5 = new LatLng(9.934130, -84.058925);
+//mMap.getMinZoomLevel();
+        mMap.addMarker(new MarkerOptions().icon(BitmapDescriptorFactory.fromResource(R.drawable.viaje)).position(milugar5).title("AutoEscuela B1"));
+        int zoomLevel5 = 7; //This goes up to 21
+        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(milugar5, zoomLevel5));
+
     }
 
     public void Mensaje(String msg){
