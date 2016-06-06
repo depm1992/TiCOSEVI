@@ -20,7 +20,7 @@ public class Actividad09_Resultado extends Base {
 
         Preguntas vg = Preguntas.getInstance();
         TextView tVBuenas = (TextView) findViewById(R.id.textView27);
-        tVBuenas.setText(vg.getBuenas() + "");
+        tVBuenas.setText(vg.getBuenas()+"0");
 
 
                 //vg.getBuenas();
