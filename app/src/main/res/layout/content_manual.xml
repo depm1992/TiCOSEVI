@@ -30,20 +30,22 @@
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="45dp" />
 
-    <GridLayout
-        android:layout_width="match_parent"
+    <ScrollView
+        android:layout_width="fill_parent"
         android:layout_height="match_parent"
+        android:id="@+id/scrollView2"
         android:layout_below="@+id/textView20"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:layout_above="@+id/btnvolver">
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/btnvolver" >
 
         <WebView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:id="@+id/webView"
-            android:layout_row="2"
-            android:layout_column="5"/>
-    </GridLayout>
+            android:layout_marginTop="106dp"
+            android:layout_below="@+id/textView20"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+    </ScrollView>
 
 </RelativeLayout>

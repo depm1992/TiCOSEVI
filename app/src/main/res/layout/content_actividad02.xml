@@ -13,55 +13,75 @@
     tools:showIn="@layout/activity_actividad02"
     android:background="@drawable/a">
 
-    <Button
-        android:layout_width="220dp"
+    <GridLayout
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="pasos para obtener la licencia"
-        android:id="@+id/button4"
-        android:background="#59ed48"
         android:layout_alignParentTop="true"
-        android:layout_alignLeft="@+id/button5"
-        android:layout_alignStart="@+id/button5"
-        android:layout_marginTop="45dp" />
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="62dp"
+        android:layout_marginStart="62dp">
 
-    <Button
-        android:layout_width="220dp"
-        android:layout_height="wrap_content"
-        android:text="estudiar para la prueba"
-        android:id="@+id/button5"
-        android:background="#f03232"
-        android:layout_above="@+id/button6"
-        android:layout_centerHorizontal="true" />
+        <Button
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:text="estudiar para la prueba"
+            android:id="@+id/button5"
+            android:background="#f03232"
+            android:layout_above="@+id/button6"
+            android:layout_centerHorizontal="true"
+            android:layout_row="1"
+            android:layout_column="0" />
 
-    <Button
-        android:layout_width="220dp"
-        android:layout_height="wrap_content"
-        android:text="realizar prueba Teórica"
-        android:id="@+id/button6"
-        android:background="#f8fe4d"
-        android:layout_above="@+id/button7"
-        android:layout_alignLeft="@+id/button7"
-        android:layout_alignStart="@+id/button7" />
+        <Button
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:text="realizar prueba Teórica"
+            android:id="@+id/button6"
+            android:background="#f8fe4d"
+            android:layout_above="@+id/button7"
+            android:layout_alignLeft="@+id/button7"
+            android:layout_alignStart="@+id/button7"
+            android:layout_row="2"
+            android:layout_column="0" />
 
-    <Button
-        android:layout_width="220dp"
-        android:layout_height="wrap_content"
-        android:text="ver mis notas obtenidas"
-        android:id="@+id/button7"
-        android:background="#5475f9"
-        android:layout_above="@+id/button8"
-        android:layout_alignLeft="@+id/button8"
-        android:layout_alignStart="@+id/button8" />
+        <Button
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:text="ver mis notas obtenidas"
+            android:id="@+id/button7"
+            android:background="#5475f9"
+            android:layout_above="@+id/button8"
+            android:layout_alignLeft="@+id/button8"
+            android:layout_alignStart="@+id/button8"
+            android:layout_row="3"
+            android:layout_column="0" />
 
-    <Button
-        android:layout_width="220dp"
-        android:layout_height="wrap_content"
-        android:text="Ubicación de escuelas de manejo"
-        android:id="@+id/button8"
-        android:background="#5cf4e2"
-        android:layout_alignParentBottom="true"
-        android:layout_alignLeft="@+id/button5"
-        android:layout_alignStart="@+id/button5"
-        android:layout_marginBottom="204dp" />
+        <Button
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:text="Ubicación de escuelas de manejo"
+            android:id="@+id/button8"
+            android:background="#5cf4e2"
+            android:layout_marginBottom="123dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignLeft="@+id/button5"
+            android:layout_alignStart="@+id/button5"
+            android:layout_row="4"
+            android:layout_column="0" />
+
+        <Button
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:text="pasos para obtener la licencia"
+            android:id="@+id/button4"
+            android:background="#59ed48"
+            android:layout_marginTop="82dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignLeft="@+id/button5"
+            android:layout_alignStart="@+id/button5"
+            android:layout_row="0"
+            android:layout_column="0" />
+    </GridLayout>
 
 </RelativeLayout>
