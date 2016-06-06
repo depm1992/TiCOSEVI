@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -12,40 +12,44 @@
     tools:context="com.example.dcr.ticosevi.Manual"
     tools:showIn="@layout/activity_manual">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Manual COSEVI 2015"
-        android:id="@+id/textView20"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:textColor="#6c95c7" />
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="volver"
-        android:id="@+id/btnvolver"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="45dp" />
-
-    <ScrollView
-        android:layout_width="fill_parent"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@+id/scrollView2"
-        android:layout_below="@+id/textView20"
-        android:layout_centerHorizontal="true"
-        android:layout_above="@+id/btnvolver" >
+        android:orientation="vertical"
+        android:weightSum="1">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Manual COSEVI 2015"
+            android:id="@+id/textView20"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:textColor="#6c95c7"
+            android:layout_gravity="center_horizontal" />
+
 
         <WebView
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="322dp"
             android:id="@+id/webView"
-            android:layout_marginTop="106dp"
             android:layout_below="@+id/textView20"
-            android:layout_alignParentRight="true"
-            android:layout_alignParentEnd="true" />
-    </ScrollView>
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="88dp"
+            android:layout_weight="2.56" />
 
-</RelativeLayout>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="volver"
+            android:id="@+id/btnvolver"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="45dp"
+            android:layout_gravity="center_horizontal" />
+
+    </LinearLayout>
+
+
+</ScrollView>
