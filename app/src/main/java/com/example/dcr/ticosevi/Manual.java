@@ -23,7 +23,7 @@ public class Manual extends Base {
         webView.setWebViewClient(new Callback());
         WebSettings webSettings = webView.getSettings();
         webSettings.setBuiltInZoomControls(true);
-        webView.loadUrl("https://www.google.com");
+        webView.loadUrl("https://drive.google.com/file/d/0B2wpdZRmq4NGQnRjbHp2bFIzT0U/view");
 
 
         Button MiButton = (Button) findViewById(R.id.btnvolver);
