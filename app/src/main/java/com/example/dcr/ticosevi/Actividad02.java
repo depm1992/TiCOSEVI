@@ -48,7 +48,7 @@ public class Actividad02 extends Base {
                         break;
 
                     case R.id.button8:
-                        /*startActivity(new Intent(Actividad02.this, Actividad07_Mapa.class)); */
+                        startActivity(new Intent(Actividad02.this, Mapa.class));
                         break;
 
                     case R.id.button5:
