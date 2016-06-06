@@ -34,7 +34,6 @@ public class Actividad08_Pregunta extends Base {
 
         Preguntas vg = Preguntas.getInstance();
         //Mensaje("El Nivel es: " + vg.getNivel());
-
         Button btnRregresar = (Button) findViewById(R.id.btnRregresar);
         btnRregresar.setOnClickListener(new View.OnClickListener() {
             @Override
